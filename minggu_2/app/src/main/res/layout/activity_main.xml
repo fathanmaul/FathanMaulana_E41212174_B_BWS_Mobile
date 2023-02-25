@@ -8,8 +8,35 @@
     android:orientation="vertical">
 
 
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="PAGE 1"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:textSize="25dp"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/txt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Input some text"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="50dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button_send"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="SEND" />-->
+
+
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView4"
+        android:id="@+id/fragmentContainerView"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
