@@ -6,17 +6,11 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/polije"
-        android:label="Workshop Mobile Praktikum"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Minggu_2"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Minggu_3"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity_2"
-            android:exported="false" />
-        <!-- <activity -->
-        <!-- android:name=".MainActivity" -->
-        <!-- android:exported="false" /> -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
