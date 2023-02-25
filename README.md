@@ -11,3 +11,6 @@
 ## Minggu 2
 - Linear Layout
 - Relative Layout
+
+## Minggu 3
+- Activity -> RecyclerView
