@@ -3,87 +3,73 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:fillViewport="false">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:orientation="vertical">
-
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/loginscrn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:text="MINGGU 2"
+            android:text="ScrollView"
             android:textSize="25dp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="LAYOUT"
-            android:textSize="16dp"
+            android:text="Welcome to Tutlane"
             android:layout_gravity="center"/>
-
-
         <Button
-            android:id="@+id/button_linear_layout"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="60dp"
-            android:text="LINEAR LAYOUT"
-            android:backgroundTint="#539165"/>
-
+            android:text="Button Two"/>
         <Button
-            android:id="@+id/button_relative_layout"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="RELATIVE LAYOUT"
-            android:backgroundTint="#3F497F"/>
-
+            android:layout_marginTop="50dp"
+            android:text="Button Three"/>
         <Button
-            android:id="@+id/button_constraint_layout"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="CONSTRAINT LAYOUT"
-            android:backgroundTint="#F7C04A"/>
-
+            android:layout_marginTop="50dp"
+            android:text="Button Four"/>
         <Button
-            android:id="@+id/button_frame_layout"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="FRAME LAYOUT"
-            android:backgroundTint="#DF2E38"/>
-
+            android:layout_marginTop="50dp"
+            android:text="Button Five"/>
         <Button
-            android:id="@+id/button_scroll_view"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="SCROLL VIEW"
-            android:backgroundTint="#E9A178"/>
-
+            android:layout_marginTop="50dp"
+            android:text="Button Six"/>
         <Button
-            android:id="@+id/button_table_layout"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="TaBLE LAYOUT"
-            android:backgroundTint="#7A3E65"/>
+            android:layout_marginTop="50dp"
+            android:text="Button Seven"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Button Eight"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Button Nine"/>
 
     </LinearLayout>
-
 </ScrollView>
