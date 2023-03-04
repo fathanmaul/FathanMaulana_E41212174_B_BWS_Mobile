@@ -1,6 +1,8 @@
 package com.example.minggu_3;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +14,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private MahasiswaAdapter adapter;
+    protected MahasiswaAdapter adapter;
     private ArrayList<Mahasiswa> mahasiswaArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
