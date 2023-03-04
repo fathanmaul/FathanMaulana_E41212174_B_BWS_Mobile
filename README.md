@@ -11,6 +11,11 @@
 ## Minggu 2
 - Linear Layout
 - Relative Layout
+- Constraint Layout
+- Frame Layout
+- Scroll View
+- Table Layout
+- Material Design
 
 ## Minggu 3
 - Activity -> RecyclerView
