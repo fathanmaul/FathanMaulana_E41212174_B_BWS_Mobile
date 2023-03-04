@@ -1,14 +1,12 @@
 package com.example.minggu_3.model;
 
 public class Mahasiswa {
-    private String nama;
-    private String nim;
-    private String nohp;
+    private String nama, npm, noHp;
 
-    public Mahasiswa(String nama, String nim, String nohp) {
-        this.setNama(nama);
-        this.setNim(nim);
-        this.setNohp(nohp);
+    public Mahasiswa(String nama, String npm, String noHp) {
+        this.nama = nama;
+        this.npm = npm;
+        this.noHp = noHp;
     }
 
     public String getNama() {
@@ -19,19 +17,19 @@ public class Mahasiswa {
         this.nama = nama;
     }
 
-    public String getNim() {
-        return nim;
+    public void setNpm(String npm) {
+        this.npm = npm;
     }
 
-    public void setNim(String nim) {
-        this.nim = nim;
+    public void setNoHp(String noHp) {
+        this.noHp = noHp;
     }
 
-    public String getNohp() {
-        return nohp;
+    public String getNpm() {
+        return npm;
     }
 
-    public void setNohp(String nohp) {
-        this.nohp = nohp;
+    public String getNoHp() {
+        return noHp;
     }
 }

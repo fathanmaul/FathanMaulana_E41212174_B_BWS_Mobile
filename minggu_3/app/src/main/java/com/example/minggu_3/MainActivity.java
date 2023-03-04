@@ -1,41 +1,44 @@
 package com.example.minggu_3;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-
-import com.example.minggu_3.model.Mahasiswa;
-
-import java.util.ArrayList;
+import android.view.View;
+import android.widget.Button;
+import com.example.minggu_3.navigator.pushReplacement;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    protected MahasiswaAdapter adapter;
-    private ArrayList<Mahasiswa> mahasiswaArrayList;
+    pushReplacement Navigator = new pushReplacement();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActionBar bar = getSupportActionBar();
+        bar.hide();
         setContentView(R.layout.activity_main);
-
-        addData();
-
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        adapter = new MahasiswaAdapter(mahasiswaArrayList);
-
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(adapter);
+        pushToList();
+        pushToRecycler();
     }
 
-    void addData(){
-        mahasiswaArrayList = new ArrayList<>();
-        mahasiswaArrayList.add(new Mahasiswa("Fathan Maulana", "E41212174", "085604982258"));
-        mahasiswaArrayList.add(new Mahasiswa("Lutfi Zahroni", "E41212124", "081981727626"));
-        mahasiswaArrayList.add(new Mahasiswa("Muhammad Sulaiman", "E41212122", "082371823718"));
+    Button btn_list, btn_recycler;
+
+    private void pushToList(){
+        btn_list = (Button)findViewById(R.id.btn_listView);
+        btn_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigator.pushReplacement(getApplicationContext(), ListView.class);
+            }
+        });
+    }
+
+    private void pushToRecycler(){
+        btn_recycler = (Button) findViewById(R.id.btn_recycler);
+        btn_recycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Navigator.pushReplacement(getApplicationContext(), RecyclerView.class);
+            }
+        });
     }
 }
