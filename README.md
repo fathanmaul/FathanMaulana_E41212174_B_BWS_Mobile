@@ -19,3 +19,6 @@
 
 ## Minggu 3
 - Activity -> RecyclerView
+
+## Minggu 4
+- Intent -> Explicit & Implicit
