@@ -22,3 +22,6 @@
 
 ## Minggu 4
 - Intent -> Explicit & Implicit
+
+## Minggu 5
+- Fragment
