@@ -25,3 +25,7 @@
 
 ## Minggu 5
 - Fragment
+
+## Minggu 10
+- Light Sensor
+- Proximity Sensor
